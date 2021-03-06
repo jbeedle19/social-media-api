@@ -7,6 +7,7 @@ const userController = {
     // Update a User by ID
     // Delete a User by ID
         //Bonus - remove associated thoughts when deleted
+    
     // Add a new friend to User's friend list with POST
     // Delete a friend from User's friend list
 };
