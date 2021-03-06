@@ -1,6 +1,6 @@
 # Social Media API
 ## Description
-The API for a social media platform.
+The API for a social media platform. Users will be able to create an account, add friends to their friend's list, share a 'Thought', and react to other users' 'Thoughts'.
 ## Installation
 Clone the repo to your local computer
 ```JavaScript
