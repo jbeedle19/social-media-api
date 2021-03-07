@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-app.use(express.urlencode({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 // Use the follwoing when front end is connected
 app.use(express.static('public'));
 
