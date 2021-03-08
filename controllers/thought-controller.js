@@ -2,16 +2,31 @@ const { Thought, User } = require('../models');
 
 const thoughtController = {
     // Get all thoughts
-    getAllUsers(req, res) {
-        User.find({})
+    getAllThoughts(req, res) {
+        Thought.find({})
             .select('-__v')
-            .then(dbUserData => res.json(dbUserData))
+            .then(dbThoughtData => res.json(dbThoughtData))
             .catch(err => {
                 console.log(err);
                 res.status(400).json(err);
             });
     },
     // Get a single thought by ID
+    getThoughtById({ params }, res) {
+        Thought.findOne({ _id: params.thoughtId })
+            .select('-__v')
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    res.status(404).json({ message: 'No user found with this ID!' });
+                    return;
+                }
+                res.json(dbThoughtData);
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
+    },
     // Create a new thought - push thought's id to associated user's thoughts array
     createThought({ params, body }, res) {
         Thought.create(body)
