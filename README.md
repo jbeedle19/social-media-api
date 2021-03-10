@@ -15,10 +15,11 @@ In your terminal, navigate to the root directory of the project and run
 ```JavaScript
 npm start
 ```
+Walkthrough of functioning API Routes
 
-![walkthrough](./placeholder.gif)
+![walkthrough](./walkthrough.gif)
 
-[Video Link](placeholder-google-drive-link.com)
+[Video Link](https://drive.google.com/file/d/1L6S-mOZGoaMRjN8F4e7s3VToV4l8zbf5/view)
 ## Built With
 * JavaScript
 * Node.js
