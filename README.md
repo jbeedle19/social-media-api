@@ -17,9 +17,9 @@ npm start
 ```
 Walkthrough of functioning API Routes
 
-![walkthrough](./walkthrough.gif)
+![walkthrough](./social-media-api-walkthrough.gif)
 
-[Video Link](https://drive.google.com/file/d/1L6S-mOZGoaMRjN8F4e7s3VToV4l8zbf5/view)
+[Video Link](https://drive.google.com/file/d/1qRw4jYH24vn5E2qgocAI0wP1hpLypUaY/view)
 ## Built With
 * JavaScript
 * Node.js
